@@ -16,15 +16,3 @@ GROUP BY customer.customer_id, customer.first_name, customer.last_name
 ORDER BY alisveris_sayisi DESC;
 
 
-SELECT
-actor.first_name,
-actor.last_name,
-film.title
-FROM
-actor
-INNER JOIN
-film_actor ON actor.actor_id = film_actor.actor_id
-INNER JOIN
-film ON film_actor.film_id = film.film_id
-ORDER BY
-actor.first_name, film.title;
